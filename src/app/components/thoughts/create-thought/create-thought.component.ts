@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class CreateThoughtComponent {
 
+  pensamento = {
+    id: '1',
+    conteudo: "Aprendendo Angular",
+    autoria: "Dev",
+    modelo: 'modelo1'
+
+  }
+
+  constructor() {}
+
+  ngOnInit(): void {
+
+  }
+
+  createThought() {
+    alert('Pensamento criado com sucesso!');
+  }
+
+  cancelThought() {
+    alert('Pensamento cancelado com sucesso!');
+  }
+
 }
